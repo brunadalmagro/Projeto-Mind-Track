@@ -1,0 +1,6 @@
+com\exemplo\controlador\WebController.class
+com\exemplo\repositorio\PensamentoDisfuncionalRepository.class
+com\exemplo\MindTrackApplication.class
+com\exemplo\servico\PensamentoDisfuncionalService.class
+com\exemplo\controlador\PensamentoDisfuncionalController.class
+com\exemplo\modelo\PensamentoDisfuncional.class

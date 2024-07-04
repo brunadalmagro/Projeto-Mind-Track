@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Lista de Pensamentos Disfuncionais</title>
+</head>
+<body>
+<h1>Pensamentos Disfuncionais</h1>
+<table>
+    <tr>
+        <th>Situação</th>
+        <th>Emoção</th>
+        <th>Intensidade da Emoção</th>
+        <th>Pensamento Automático</th>
+        <th>Convicção do Pensamento</th>
+        <th>Resposta Alternativa</th>
+        <th>Convicção da Resposta</th>
+        <th>Reavaliação da Convicção</th>
+        <th>Reavaliação da Intensidade</th>
+    </tr>
+    <tr th:each="pensamento : ${pensamentos}">
+        <td th:text="${pensamento.situacao}">Situação</td>
+        <td th:text="${pensamento.emocao}">Emoção</td>
+        <td th:text="${pensamento.intensidadeEmocao}">Intensidade da Emoção</td>
+        <td th:text="${pensamento.pensamentoAutomatico}">Pensamento Automático</td>
+        <td th:text="${pensamento.conviccaoPensamento}">Convicção do Pensamento</td>
+        <td th:text="${pensamento.respostaAlternativa}">Resposta Alternativa</td>
+        <td th:text="${pensamento.conviccaoResposta}">Convicção da Resposta</td>
+        <td th:text="${pensamento.reavaliacaoConviccao}">Reavaliação da Convicção</td>
+        <td th:text="${pensamento.reavaliacaoIntensidade}">Reavaliação da Intensidade</td>
+    </tr>
+</table>
+</body>
+</html>
