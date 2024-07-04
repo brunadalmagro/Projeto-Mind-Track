@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Adicionar Pensamento Disfuncional</title>
+</head>
+<body>
+<h1>Adicionar Pensamento Disfuncional</h1>
+<form th:action="@{/salvarPensamento}" th:object="${pensamento}" method="post">
+    <label for="situacao">Situação:</label>
+    <input type="text" id="situacao" th:field="*{situacao}" /><br/>
+
+    <label for="emocao">Emoção:</label>
+    <input type="text" id="emocao" th:field="*{emocao}" /><br/>
+
+    <label for="intensidadeEmocao">Intensidade da Emoção:</label>
+    <input type="number" id="intensidadeEmocao" th:field="*{intensidadeEmocao}" /><br/>
+
+    <label for="pensamentoAutomatico">Pensamento Automático:</label>
+    <input type="text" id="pensamentoAutomatico" th:field="*{pensamentoAutomatico}" /><br/>
+
+    <label for="conviccaoPensamento">Convicção do Pensamento:</label>
+    <input type="number" id="conviccaoPensamento" th:field="*{conviccaoPensamento}" /><br/>
+
+    <label for="respostaAlternativa">Resposta Alternativa:</label>
+    <input type="text" id="respostaAlternativa" th:field="*{respostaAlternativa}" /><br/>
+
+    <label for="conviccaoResposta">Convicção da Resposta:</label>
+    <input type="number" id="conviccaoResposta" th:field="*{conviccaoResposta}" /><br/>
+
+    <label for="reavaliacaoConviccao">Reavaliação da Convicção:</label>
+    <input type="number" id="reavaliacaoConviccao" th:field="*{reavaliacaoConviccao}" /><br/>
+
+    <label for="reavaliacaoIntensidade">Reavaliação da Intensidade:</label>
+    <input type="number" id="reavaliacaoIntensidade" th:field="*{reavaliacaoIntensidade}" /><br/>
+
+    <button type="submit">Salvar</button>
+</form>
+</body>
+</html>
